@@ -1,0 +1,1 @@
+def combine_coins(coin, lst): return ", ".join([coin + str(num) for num in lst])
