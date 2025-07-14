@@ -1,0 +1,6 @@
+print(max(open("names.txt").read().split()))
+print(sum(len(name) for name in open("names.txt").read().split()))
+print("\n".join([name for name in open("names.txt").read().split() if len(name) == len(min(open("names.txt").read().split(),key=len))]))
+print("\n".join(map(str, [len(name) for name in open("names.txt").read().split()])))
+len_ = input("Enter a len: ")
+print("\n".join([name for name in open("names.txt").read().split() if len(name) == int(len_)]))
